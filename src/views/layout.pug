@@ -1,0 +1,13 @@
+doctype html
+html(lang='ru')
+  block head
+  body
+    block sprites
+      include components/sprites
+    block header
+      include components/header
+    block content
+    block footer
+    block modals
+    block scripts
+      script(src=require('../scripts/index.js'))

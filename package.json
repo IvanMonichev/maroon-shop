@@ -15,9 +15,11 @@
   "author": "IvanMonichev",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
     "css-loader": "^6.7.1",
     "eslint-config-airbnb": "^19.0.4",
     "http-server": "^14.1.1",
+    "postcss-loader": "^7.2.4",
     "prismjs": "^1.28.0",
     "pug-plugin": "^4.5.1",
     "sass": "^1.54.1",

@@ -11,7 +11,7 @@ module.exports = (env, argv) => {
     stats: 'minimal',
 
     entry: {
-      index: 'src/views/index.pug',
+      index: 'src/views/pages/index.pug',
       card: 'src/views/pages/card.pug',
       catalog: 'src/views/pages/catalog.pug',
     },
@@ -42,7 +42,7 @@ module.exports = (env, argv) => {
         pretty: !isProd, // formatting of HTML
         extractCss: {
           // output filename of styles
-          filename: '/css/[name].[contenthash:8].css',
+          filename: '/styles/[name].[contenthash:8].css',
         },
       }),
     ],
@@ -73,7 +73,26 @@ module.exports = (env, argv) => {
         // styles
         {
           test: /\.(css|sass|scss)$/,
-          use: ['css-loader', 'sass-loader'],
+          use: [
+            {
+              loader: 'css-loader',
+              options: {
+                importLoaders: 1,
+              },
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                postcssOptions: {
+                  plugins: [
+                    [
+                      'autoprefixer',
+                    ],
+                  ],
+                },
+              },
+            },
+            'sass-loader'],
         },
 
         // fonts
@@ -83,19 +102,18 @@ module.exports = (env, argv) => {
           include: /assets[\\/]fonts/, // fonts from `assets/fonts` directory only, match posix and win paths
           generator: {
             // output filename of fonts
-            filename: 'assets/fonts/[name][ext][query]',
+            filename: '/fonts/[name][ext][query]',
           },
         },
 
         // images
         {
-          test: /\.(png|svg|jpe?g|webp)$/i,
-          resourceQuery: { not: [/inline/] }, // ignore images with `?inline` query
+          test: /\.(png|svg|jpe?g|webp|ico)$/i,
           type: 'asset/resource',
-          include: /assets[\\/]images/, // images from `assets/images` directory only, match posix and win paths
+          include: /[\\/]images/,
           generator: {
             // output filename of images
-            filename: 'assets/img/[name].[hash:8][ext]',
+            filename: 'images/[name].[hash:8][ext]',
           },
         },
 

@@ -1,6 +1,3 @@
 {
-  "extends": ["airbnb", "airbnb/hooks"],
-  "plugins": [
-    "pug"
-  ]
+  "extends": ["airbnb", "airbnb/hooks"]
 }
