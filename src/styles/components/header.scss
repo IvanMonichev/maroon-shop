@@ -1,0 +1,87 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100px;
+
+  &__content {
+    display: flex;
+  }
+
+  &__menu-button {
+    display: none;
+    padding: 0;
+    cursor: pointer;
+    background: url("Images/sprite/burger-icon.svg") no-repeat left center/24px 12px transparent;
+    border: none;
+    outline: 0;
+    transition: 0.2s;
+
+    @media (width <= 1119px) {
+      display: block;
+      width: 24px;
+      height: 18px;
+    }
+
+    &:active,
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+      transition: 0.2s;
+    }
+  }
+
+  .logo {
+    cursor: pointer;
+    transition: opacity 0.6s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    margin-right: 51px;
+
+    @media (width <= 1119px) {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      column-gap: 35px;
+      list-style: none;
+    }
+
+    &__item {
+      font-size: 16px;
+      line-height: calc(24 / 16);
+    }
+
+    &__link {
+      color: #122947;
+      text-decoration: none;
+      transition: opacity 0.6s;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .user-menu {
+    display: flex;
+    column-gap: 30px;
+
+    &__link {
+      color: #122947;
+      transition: opacity 0.6s;
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}

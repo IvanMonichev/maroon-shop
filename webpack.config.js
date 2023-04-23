@@ -27,11 +27,11 @@ module.exports = (env, argv) => {
 
     resolve: {
       alias: {
-        Views: path.join(__dirname, 'src/views/'),
-        Images: path.join(__dirname, 'src/images/'),
-        Fonts: path.join(__dirname, 'src/fonts/'),
-        Styles: path.join(__dirname, 'src/styles/'),
-        Scripts: path.join(__dirname, 'src/scripts/'),
+        Views: path.join(__dirname, './src/views/'),
+        Images: path.join(__dirname, './src/images/'),
+        Fonts: path.join(__dirname, './src/fonts/'),
+        Styles: path.join(__dirname, './src/styles/'),
+        Scripts: path.join(__dirname, './src/scripts/'),
       },
     },
 
@@ -42,7 +42,7 @@ module.exports = (env, argv) => {
         pretty: !isProd, // formatting of HTML
         extractCss: {
           // output filename of styles
-          filename: '/styles/[name].[contenthash:8].css',
+          filename: './styles/[name].[contenthash:8].css',
         },
       }),
     ],
@@ -99,10 +99,9 @@ module.exports = (env, argv) => {
         {
           test: /\.(woff2?|ttf|otf|eot|svg)$/,
           type: 'asset/resource',
-          include: /assets[\\/]fonts/, // fonts from `assets/fonts` directory only, match posix and win paths
           generator: {
             // output filename of fonts
-            filename: '/fonts/[name][ext][query]',
+            filename: './fonts/[name].[hash:8][ext][query]',
           },
         },
 
@@ -110,10 +109,9 @@ module.exports = (env, argv) => {
         {
           test: /\.(png|svg|jpe?g|webp|ico)$/i,
           type: 'asset/resource',
-          include: /[\\/]images/,
           generator: {
             // output filename of images
-            filename: 'images/[name].[hash:8][ext]',
+            filename: './images/[name].[hash:8][ext]',
           },
         },
 

@@ -1,1 +1,31 @@
-@include font-face("m-plus", "m-plus-1p", "../fonts/m-plus-1p", 500, normal);
+@font-face {
+  font-family: Mplus;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Mplus 1p"), local("Mplus1p-Regular"), url("Fonts/m-plus-1p.woff2") format("woff2"), url("Fonts/m-plus-1p.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Mplus;
+  font-style: normal;
+  font-weight: 500;
+  src: local("Mplus 1p Medium"), local("Mplus1p-Medium"), url("Fonts/m-plus-1p-500.woff2") format("woff2"), url("Fonts/m-plus-1p-500.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 400;
+  src: url("Fonts/raleway.woff2") format("woff2"), url("Fonts/raleway.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  src: url("Fonts/raleway-500.woff2") format("woff2"), url("Fonts/raleway-500.woff") format("woff");
+  font-display: swap;
+}

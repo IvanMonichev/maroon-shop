@@ -1,24 +1,26 @@
-header.header
-  a.logo
+header.header.container
+  button.header__menu-button(aria-label='Меню')
+  a.logo(href='#' aria-label='Логотип Maroon')
     svg.logo__image(width=131 height=21)
       use(xlink:href="#logo-icon")
-  nav.header__navigation.navigation
-    ul.navigation__list
-      li.navigation__item
-        a.navigation__link(href='catalog.htm') Каталог
-      li.navigation__item
-        a.navigation__link(href='#') О нас
-      li.navigation__item
-        a.navigation__link(href='#') Контакты
-  ul.header__menu.user-menu
-    li.user-menu__item
-      a.user-menu__link(href='#' aria-label='Пользователь')
-        svg(height=21 width=16)
-          use(xlink:href='#user-icon')
-    li.user-menu__item
-      a.user-menu__link(href='#' aria-label='Корзина')
-        svg(height=21 width=16)
-          use(xlink:href='#cart-icon')
+  div.header__content
+    nav.header__navigation.navigation
+      ul.navigation__list
+        li.navigation__item
+          a.navigation__link(href='catalog.htm') Каталог
+        li.navigation__item
+          a.navigation__link(href='#') О нас
+        li.navigation__item
+          a.navigation__link(href='#') Контакты
+    ul.header__menu.user-menu
+      li.user-menu__item
+        a.user-menu__link(href='#' aria-label='Пользователь')
+          svg(height=21 width=16)
+            use(xlink:href='#user-icon')
+      li.user-menu__item
+        a.user-menu__link(href='#' aria-label='Корзина')
+          svg(height=21 width=16)
+            use(xlink:href='#cart-icon')
 
 
 
