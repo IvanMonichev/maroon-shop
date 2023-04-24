@@ -1,39 +1,40 @@
-header.header.header--transparent.container
-  button.header__menu-button(aria-label='Меню')
-  a.logo(href='#' aria-label='Логотип Maroon')
-    svg.logo__image(width=131 height=21)
-      use(xlink:href="#logo-icon")
-  div.header__content
-    nav.header__navigation.navigation
-      ul.navigation__list
-        li.navigation__item
-          a.navigation__link(href='catalog.htm') Каталог
-        li.navigation__item
-          a.navigation__link(href='#') О нас
-        li.navigation__item
-          a.navigation__link(href='#') Контакты
-      ul.navigation__contacts.social
-        li.social__item
-          a.social__link(href='#' aria-label='Facebook')
-            svg(height=18 width=11)
-              use(xlink:href='#facebook-icon')
+header.header.header--transparent
+  div.header__wrapper
+    button.header__menu-button(aria-label='Меню')
+    a.logo(href='#' aria-label='Логотип Maroon')
+      svg.logo__image(width=131 height=21)
+        use(xlink:href="#logo-icon")
+    div.header__content
+      nav.header__navigation.navigation
+        ul.navigation__list
+          li.navigation__item
+            a.navigation__link(href='catalog.htm') Каталог
+          li.navigation__item
+            a.navigation__link(href='#') О нас
+          li.navigation__item
+            a.navigation__link(href='#') Контакты
+        ul.navigation__contacts.social
           li.social__item
-            a.social__link(href='#' aria-label='Instagram')
-              svg(height=20 width=20)
-                use(xlink:href='#instagram-icon')
-          li.social__item
-            a.social__link(href='#' aria-label='Twitter')
-              svg(height=17 width=20)
-                use(xlink:href='#twitter-icon')
-    ul.header__menu.user-menu
-      li.user-menu__item
-        a.user-menu__link(href='#' aria-label='Пользователь')
-          svg(height=21 width=16)
-            use(xlink:href='#user-icon')
-      li.user-menu__item
-        a.user-menu__link(href='#' aria-label='Корзина')
-          svg(height=21 width=16)
-            use(xlink:href='#cart-icon')
+            a.social__link(href='#' aria-label='Facebook')
+              svg(height=18 width=11)
+                use(xlink:href='#facebook-icon')
+            li.social__item
+              a.social__link(href='#' aria-label='Instagram')
+                svg(height=20 width=20)
+                  use(xlink:href='#instagram-icon')
+            li.social__item
+              a.social__link(href='#' aria-label='Twitter')
+                svg(height=17 width=20)
+                  use(xlink:href='#twitter-icon')
+      ul.header__menu.user-menu
+        li.user-menu__item
+          a.user-menu__link(href='#' aria-label='Пользователь')
+            svg(height=21 width=16)
+              use(xlink:href='#user-icon')
+        li.user-menu__item
+          a.user-menu__link(href='#' aria-label='Корзина')
+            svg(height=21 width=16)
+              use(xlink:href='#cart-icon')
 
 
 
