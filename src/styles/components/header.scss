@@ -1,8 +1,21 @@
 .header {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 100px;
+  border-bottom: 1px solid #dbdce0;
+  transition: background-color 0.6s, border-color 0.6s;
+
+  &--transparent {
+    background: 0 0;
+    border-color: transparent;
+  }
+
+  &--colored {
+    background-color: $cultured-color;
+    border-color: #dbdce0;
+  }
 
   &__content {
     display: flex;
@@ -21,6 +34,10 @@
       display: block;
       width: 24px;
       height: 18px;
+    }
+
+    &--active {
+      background: url("Images/sprite/cross-icon.svg") no-repeat 0 0/18px 18px;
     }
 
     &:active,
@@ -45,10 +62,6 @@
     align-items: center;
     margin-right: 51px;
 
-    @media (width <= 1119px) {
-      display: none;
-    }
-
     &__list {
       display: flex;
       column-gap: 35px;
@@ -68,6 +81,65 @@
       &:hover {
         opacity: 0.6;
       }
+    }
+
+    &__contacts {
+      display: none;
+    }
+
+    @media screen and (width <= 1119px) {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      display: none;
+      flex-direction: column;
+      row-gap: 60px;
+      align-items: flex-start;
+      width: 100%;
+      min-height: 380px;
+      padding: 50px 45px;
+      overflow: auto;
+      background-color: $cultured-color;
+      box-shadow: 0 4px 30px rgb(214 214 214 / 0%);
+      transition: top 0.6s ease-out;
+
+      &__list {
+        flex-direction: column;
+        row-gap: 40px;
+      }
+
+      &__item {
+        font-size: 32px;
+        line-height: 1.25;
+      }
+
+      &__contacts {
+        display: flex;
+        column-gap: 45px;
+      }
+    }
+
+    @media screen and (width <= 767px) {
+      top: 75px;
+      min-height: 350px;
+      padding: 40px 15px 50px;
+
+      &__list {
+        row-gap: 35px;
+      }
+
+      &__item {
+        font-size: 28px;
+        line-height: 1.3;
+      }
+
+      &__contacts {
+        column-gap: 30px;
+      }
+    }
+
+    @media screen and (width <= 767px) {
+      min-height: 75px;
     }
   }
 

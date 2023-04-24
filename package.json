@@ -8,7 +8,7 @@
     "url": "git+https://github.com/IvanMonichev/maroon-shop.git"
   },
   "scripts": {
-    "start": "webpack serve --mode=development",
+    "start": "webpack serve --mode=development --hot --open",
     "build": "webpack --mode=production --progress",
     "preview": "npm run build && http-server dist -og"
   },
@@ -17,8 +17,8 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "css-loader": "^6.7.1",
-    "eslint-config-airbnb": "^19.0.4",
     "http-server": "^14.1.1",
+    "jquery": "^3.6.4",
     "postcss-loader": "^7.2.4",
     "prismjs": "^1.28.0",
     "pug-plugin": "^4.5.1",
