@@ -1,5 +1,5 @@
 .header {
-  position: relative;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,7 +13,7 @@
   }
 
   &--colored {
-    background-color: $cultured-color;
+    background-color: $white-color;
     border-color: #dbdce0;
   }
 

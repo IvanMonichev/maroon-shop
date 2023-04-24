@@ -1,0 +1,6 @@
+mixin pictureAdaptive(srcMobile, srcDesktop, alt, width, height)
+  picture
+    source(type='image/jpeg' media='(max-width: 600px)' srcset=srcMobile)
+    img(src=srcDesktop width=width height=height alt=alt)
+
+

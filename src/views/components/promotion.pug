@@ -1,0 +1,10 @@
+include ../abstracts/mixins
+section.main__item.promotion
+  div.promotion__content
+    h1.promotion__title Maroon
+    p.promotion__description Натуральная косметика для бережного ухода за кожей
+    a.promotion__button.button Подробнее
+  div.promotion__card.card-promotion
+    picture
+      source(type='image/jpeg' media='(max-width: 600px)' srcset=require('Images/promo-image-one.jpg'))
+      img(src=require('Images/promo-image-one.jpg') width=330 height=442 alt='Уход для лица')
