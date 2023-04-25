@@ -9,6 +9,12 @@
     max-width: 1030px;
     padding: 131px 0 97px;
     margin: 0 auto;
+
+    @include extra-large {
+      position: relative;
+      column-gap: 187px;
+      padding: 131px 45px 97px;
+    }
   }
 
   &__title {
@@ -20,6 +26,10 @@
     color: $blue-zodiac-color;
     text-align: center;
     text-transform: uppercase;
+
+    @include extra-large {
+      margin: 0;
+    }
   }
 
   &__description {
@@ -37,8 +47,14 @@
 
   &__content {
     display: flex;
-    flex: 0 1 274px;
     flex-direction: column;
+    width: 100%;
+    max-width: 274px;
+
+    @include extra-large {
+      position: absolute;
+      top: 159px;
+    }
   }
 
   &__card {

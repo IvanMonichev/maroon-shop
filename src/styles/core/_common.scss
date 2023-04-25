@@ -4,11 +4,11 @@
   padding: 0 98px;
   margin: 0 auto;
 
-  @media screen and (width <= 1119px) {
+  @include extra-large {
     padding: 0 45px;
   }
 
-  @media screen and (width <= 767px) {
+  @include medium {
     padding: 0 15px;
   }
 }
