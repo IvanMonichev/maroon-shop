@@ -1,0 +1,73 @@
+.promotion {
+  background: url("Images/promotion-background.jpg") no-repeat 0 0/cover #fff;
+
+  &__wrapper {
+    display: flex;
+    column-gap: 48px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1030px;
+    padding: 131px 0 97px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin: 61px 0 0;
+    font-family: Raleway, sans-serif;
+    font-size: 58px;
+    font-weight: 500;
+    line-height: calc(68 / 58);
+    color: $blue-zodiac-color;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin: 30px 0 40px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: $blue-zodiac-color;
+    text-align: center;
+  }
+
+  &__button {
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: flex;
+    flex: 0 1 274px;
+    flex-direction: column;
+  }
+
+  &__card {
+    &:nth-child(2) {
+      order: -1;
+    }
+
+    &:nth-child(3) {
+      order: 1;
+    }
+  }
+
+  .card-promotion {
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 15px;
+      text-decoration: none;
+      transition: opacity 0.6s;
+
+      span {
+        font-size: 16px;
+        line-height: 1.4;
+      }
+
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 141px;
+  min-height: 41px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: $blue-zodiac-color;
+  text-decoration: none;
+  cursor: pointer;
+  background: 0 0;
+  border: 1px solid $blue-zodiac-color;
+  border-radius: 2px;
+  outline: 0;
+  transition: color 0.3s, background-color 0.3s;
+
+  &:hover {
+    color: $cultured-color;
+    background-color: $blue-zodiac-color;
+  }
+}
