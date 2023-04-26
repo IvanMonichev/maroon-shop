@@ -1,0 +1,40 @@
+section.main-item.best-sellers
+  div.best-sellers__content
+    h2.best-sellers__title Бестселлеры
+    p.best-sellers__description Легендарные продукты, завоевавшие любовь наших клиентов
+    a.best-sellers__button.button(href='#') Смотреть всё
+  div.best-sellers__slider.slider
+    div.slider__wrapper
+      div.slider__item.product-card
+        picture
+          source(type='image/jpeg' media='(max-width: 600px)' srcset=require('Images/best-sellers-1.jpg'))
+          img.product-card__image(src=require('Images/best-sellers-1.jpg') alt="High - крем для лица" height="312" width="230")
+        h3.product-card__title High
+        a.product-card__link(href='#') Подробнее
+      div.slider__item.product-card
+        picture
+          source(type='image/jpeg' media='(max-width: 600px)' srcset=require('Images/best-sellers-2.jpg'))
+          img.product-card__image(src=require('Images/best-sellers-2.jpg') alt="High - крем для лица" height="312" width="230")
+        h3.product-card__title High
+        a.product-card__link(href='#') Подробнее
+      div.slider__item.product-card
+        picture
+          source(type='image/jpeg' media='(max-width: 600px)' srcset=require('Images/best-sellers-3.jpg'))
+          img.product-card__image(src=require('Images/best-sellers-3.jpg') alt="High - крем для лица" height="312" width="230")
+        h3.product-card__title High
+        a.product-card__link(href='#') Подробнее
+      div.slider__item.product-card
+        picture
+          source(type='image/jpeg' media='(max-width: 600px)' srcset=require('Images/best-sellers-4.jpg'))
+          img.product-card__image(src=require('Images/best-sellers-4.jpg') alt="High - крем для лица" height="312" width="230")
+        h3.product-card__title High
+        a.product-card__link(href='#') Подробнее
+    div.slider__button-container
+      button.slider__button(type='button')
+        svg(class="slider-icon" height=12 width=26)
+          use(xlink:href="#arrow-left")
+      button.slider__button(type='button')
+        svg(class="slider-icon" height=12 width=26)
+          use(xlink:href="#main-arrow")
+
+
