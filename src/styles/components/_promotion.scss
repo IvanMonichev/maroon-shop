@@ -15,6 +15,13 @@
       column-gap: 187px;
       padding: 131px 45px 97px;
     }
+
+    @include medium {
+      flex-wrap: wrap;
+      column-gap: 0;
+      justify-content: space-between;
+      padding: 106px 15px 60px;
+    }
   }
 
   &__title {
@@ -39,6 +46,10 @@
     line-height: 1.45;
     color: $blue-zodiac-color;
     text-align: center;
+
+    @include medium {
+      margin: 20px 0 30px;
+    }
   }
 
   &__button {
@@ -55,15 +66,37 @@
       position: absolute;
       top: 159px;
     }
+
+    @include medium {
+      position: static;
+      max-width: none;
+      margin: 0 0 15px;
+    }
   }
 
   &__card {
     &:nth-child(2) {
       order: -1;
+
+      @include medium {
+        order: 0;
+      }
     }
 
     &:nth-child(3) {
       order: 1;
+    }
+
+    @include medium {
+      width: calc((100% - 30px) / 2);
+      min-width: 130px;
+
+      img {
+        width: 100%;
+        min-width: 130px;
+        height: calc((50vw - 30px) / (130 / 170));
+        object-position: center;
+      }
     }
   }
 
@@ -79,6 +112,11 @@
       span {
         font-size: 16px;
         line-height: 1.4;
+
+        @include medium {
+          font-size: 12px;
+          line-height: 1.4;
+        }
       }
 
       &:hover {
