@@ -150,7 +150,7 @@ module.exports = (env, argv) => {
       },
       compress: true,
       port: 4000,
-      open: true, // open in default browser
+      open: false, // open in default browser
       watchFiles: {
         paths: ['src/**/*.*'],
         options: {
