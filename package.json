@@ -10,13 +10,16 @@
   "scripts": {
     "start": "webpack serve --mode=development --hot --open",
     "build": "webpack --mode=production --progress",
-    "preview": "npm run build && http-server dist -og"
+    "preview": "npm run build && http-server dist -og",
+    "lint": "npx eslint ."
   },
   "author": "IvanMonichev",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "css-loader": "^6.7.1",
+    "eslint": "^8.39.0",
+    "eslint-config-jquery": "^3.0.0",
     "http-server": "^14.1.1",
     "jquery": "^3.6.4",
     "postcss-loader": "^7.2.4",

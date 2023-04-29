@@ -1,28 +1,28 @@
-import $ from 'jquery';
-import './vendor/swiper-config.js';
+import $ from "jquery";
+import "./vendor/swiper-config.js";
 
-$(document).ready(() => {
+$( document ).ready( () => {
 
   // Burger menu
-  $('.header__menu-button').on('click', () => {
-    $('.header__menu-button').toggleClass('header__menu-button--active');
-    $('.root').toggleClass('root--lock');
-    $('.navigation').fadeToggle().css('display', 'flex');
-  });
+  $( ".header__menu-button" ).on( "click", () => {
+    $( ".header__menu-button" ).toggleClass( "header__menu-button--active" );
+    $( ".root" ).toggleClass( "root--lock" );
+    $( ".navigation" ).fadeToggle().css( "display", "flex" );
+  } );
 
   // Scroll header
-  if ($(window).scrollTop() > 50) {
-    $('.header').addClass('header--colored');
-  };
+  if ( $( window ).scrollTop() > 50 ) {
+    $( ".header" ).addClass( "header--colored" );
+  }
 
-  $(window).on('scroll', () => {
-    if ($(window).scrollTop() > 50) {
-      $('.header').addClass('header--colored', 2000);
+  $( window ).on( "scroll", () => {
+    if ( $( window ).scrollTop() > 50 ) {
+      $( ".header" ).addClass( "header--colored", 2000 );
     } else {
-      $('.header').removeClass('header--colored');
-    };
-  })
-});
+      $( ".header" ).removeClass( "header--colored" );
+    }
+  } );
+} );
 
-console.log('The application is working.');
-console.log(`Ivan Monichev © ${new Date().getFullYear()} — https://github.com/IvanMonichev`);
+console.log( "The application is working." );
+console.log( `Ivan Monichev © ${new Date().getFullYear()} — https://github.com/IvanMonichev` );
