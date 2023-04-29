@@ -1,27 +1,5 @@
 import $ from 'jquery';
-import Swiper from 'swiper';
-// import './vendor/swiper-config.js';
-
-
-const mySwiper = new Swiper('.swiper', {
-  loop: true,
-  navigation: {
-    nextEl: `.slider__button--next`,
-    prevEl: `.slider__button--prev`,
-  },
-  slidesPerView: 4,
-  spaceBetween: 30,
-  updateOnWindowResize: true,
-  grabCursor: true,
-  breakpoints: {
-    320: {
-      width: 970
-    },
-    768: {
-      width: 1010
-    }
-  }
-})
+import './vendor/swiper-config.js';
 
 $(document).ready(() => {
 
