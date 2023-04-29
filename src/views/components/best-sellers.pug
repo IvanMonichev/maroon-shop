@@ -2,7 +2,7 @@ section.main-item.best-sellers
   div.best-sellers__content
     h2.best-sellers__title.title-medium Бестселлеры
     p.best-sellers__description.paragraph-medium Легендарные продукты, завоевавшие любовь наших клиентов
-    a.best-sellers__button.button(href='#') Смотреть всё
+    a.best-sellers__button.button(href='#' aria-label='Смотреть всё') Смотреть всё
   div.best-sellers__slider.slider.swiper
     div.slider__wrapper.swiper-wrapper
       div.slider__item.product-card.swiper-slide
@@ -33,12 +33,41 @@ section.main-item.best-sellers
         h3.product-card__title Milk
         p.product-card__description масло для тела
         a.product-card__link(href='#') Подробнее
+      div.slider__item.product-card.swiper-slide
+        picture
+          source(type='image/jpeg' media='(max-width: 600px)' srcset=require('Images/best-sellers-1.jpg'))
+          img.product-card__image(src=require('Images/best-sellers-1.jpg') alt="High - крем для лица" height="312" width="230")
+        h3.product-card__title High
+        p.product-card__description крем для лица
+        a.product-card__link(href='#') Подробнее
+      div.slider__item.product-card.swiper-slide
+        picture
+          source(type='image/jpeg' media='(max-width: 600px)' srcset=require('Images/best-sellers-2.jpg'))
+          img.product-card__image(src=require('Images/best-sellers-2.jpg') alt="High - крем для лица" height="312" width="230")
+        h3.product-card__title Rest
+        p.product-card__description минеральная пудра
+        a.product-card__link(href='#') Подробнее
+      div.slider__item.product-card.swiper-slide
+        picture
+          source(type='image/jpeg' media='(max-width: 600px)' srcset=require('Images/best-sellers-3.jpg'))
+          img.product-card__image(src=require('Images/best-sellers-3.jpg') alt="High - крем для лица" height="312" width="230")
+        h3.product-card__title Rose
+        p.product-card__description крем для лица
+        a.product-card__link(href='#') Подробнее
+      div.slider__item.product-card.swiper-slide
+        picture
+          source(type='image/jpeg' media='(max-width: 600px)' srcset=require('Images/best-sellers-4.jpg'))
+          img.product-card__image(src=require('Images/best-sellers-4.jpg') alt="High - крем для лица" height="312" width="230")
+        h3.product-card__title Milk
+        p.product-card__description масло для тела
+        a.product-card__link(href='#') Подробнее
     div.slider__button-container
-      div.slider__button.slider__button--prev
+      button.slider__button.slider__button--prev(type='button')
         svg(class="slider-icon" height=12 width=26)
           use(xlink:href="#arrow-left")
-      div.slider__button.slider__button--next
+      button.slider__button.slider__button--next(type='button')
         svg(class="slider-icon" height=12 width=26)
           use(xlink:href="#main-arrow")
+  a.best-sellers__button.best-sellers__button--mobile.button(href='#' aria-label='Смотреть всё') Смотреть всё
 
 

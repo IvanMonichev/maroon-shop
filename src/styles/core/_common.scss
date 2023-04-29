@@ -16,6 +16,14 @@
 .main {
   &__item {
     margin-bottom: 140px;
+
+    @include extra-large {
+      margin-bottom: 120px;
+    }
+
+    @include medium {
+      margin-bottom: 80px;
+    }
   }
 }
 

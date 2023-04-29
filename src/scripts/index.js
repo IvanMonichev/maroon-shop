@@ -11,13 +11,16 @@ $(document).ready(() => {
   });
 
   // Scroll header
+  if ($(window).scrollTop() > 50) {
+    $('.header').addClass('header--colored');
+  };
 
   $(window).on('scroll', () => {
     if ($(window).scrollTop() > 50) {
-      $('.header').addClass('header--colored');
+      $('.header').addClass('header--colored', 2000);
     } else {
       $('.header').removeClass('header--colored');
-    }
+    };
   })
 });
 

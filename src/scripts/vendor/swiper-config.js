@@ -1,9 +1,10 @@
-import Swiper from 'swiper';
+import Swiper, { Navigation } from 'swiper';
 
 const slider = document.querySelector(`.swiper`);
 
 if (slider) {
   const mySwiper = new Swiper('.swiper', {
+    modules: [Navigation],
     init: false,
     loop: true,
     navigation: {

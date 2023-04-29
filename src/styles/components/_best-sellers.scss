@@ -5,6 +5,16 @@
   padding-left: 98px;
   overflow: hidden;
 
+  @include extra-large {
+    padding-left: 45px;
+  }
+
+  @include medium {
+    position: relative;
+    flex-direction: column;
+    padding: 0;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
@@ -12,15 +22,54 @@
     max-width: 214px;
     height: 250px;
     margin: 0 85px 44px 0;
+
+    @include extra-large {
+      margin: 0 40px 44px 0;
+    }
+
+    @include medium {
+      align-items: center;
+      height: auto;
+      margin: 0;
+      margin-bottom: 50px;
+    }
   }
 
   &__title {
     margin: 0 0 30px;
+
+    @include medium {
+      margin: 0 0 10px;
+      font-size: 28px;
+      text-align: center;
+    }
   }
 
   &__description {
     margin: 0 0 40px;
     font-weight: 400;
+
+    @include medium {
+      font-size: 16px;
+      line-height: 1.4;
+      text-align: center;
+      margin: 0;
+    }
+  }
+
+  &__button {
+    @include medium {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include medium {
+        display: flex;
+        margin-top: 40px;
+      }
+    }
   }
 
   .slider {
@@ -30,6 +79,52 @@
     &__item {
       width: 220px;
       height: 297px;
+
+      @include medium {
+        width: 220px;
+        height: 297px;
+      }
+    }
+
+    &__button-container {
+      display: flex;
+      column-gap: 32px;
+      justify-content: flex-end;
+      margin: 25px 98px 0 0;
+
+      @include extra-large {
+        margin-right: 45px;
+      }
+
+      @include medium {
+        display: none;
+      };
+    }
+
+    &__button {
+      position: static;
+      z-index: 0;
+      display: block;
+      width: 26px;
+      height: 12px;
+      margin: 0;
+      cursor: pointer;
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+      transition: transform 0.3s, opacity 0.6s;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:first-child:hover {
+        transform: translate(-5px);
+      }
+
+      &:last-child:hover {
+        transform: translate(5px);
+      }
     }
   }
 
@@ -41,6 +136,11 @@
     justify-content: flex-end;
     width: 230px;
     height: 312px;
+
+    @include medium {
+      width: 220px;
+      height: 297px;
+    }
 
     &__title {
       z-index: 1;
