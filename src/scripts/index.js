@@ -24,5 +24,4 @@ $( document ).ready( () => {
   } );
 } );
 
-console.log( "The application is working." );
 console.log( `Ivan Monichev © ${new Date().getFullYear()} — https://github.com/IvanMonichev` );

@@ -1,11 +1,11 @@
 @mixin extra-large() {
-  @media screen and (width <= 1119px) {
+  @media screen and (max-width: 1119px) {
     @content;
   }
 }
 
 @mixin medium() {
-  @media screen and (width <=767px) {
+  @media screen and (max-width: 767px) {
     @content
   }
 }
