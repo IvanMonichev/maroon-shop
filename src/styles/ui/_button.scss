@@ -2,9 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 141px;
+  max-width: 200px;
   min-height: 41px;
+  padding: 0 28px;
   font-size: 16px;
   line-height: 1.4;
   color: $blue-zodiac-color;
@@ -19,5 +19,14 @@
   &:hover {
     color: $cultured-color;
     background-color: $blue-zodiac-color;
+  }
+
+  &--gray {
+    border: 1px solid $bombay-color;
+
+    &:hover {
+      color: $cultured-color;
+      background-color: $bombay-color;
+    }
   }
 }

@@ -1,0 +1,46 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 400px;
+  background: url('Images/spring.jpg') no-repeat 0 0/cover $cultured-color;
+
+  @include extra-large {
+    background-position: 50%;
+  }
+
+  @include medium {
+    min-height: 562px;
+    background-image: url('Images/spring-mobile.jpg');
+    background-position: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 284px;
+    margin: 81px 240px 81px 0;
+
+    @include extra-large {
+      margin: 97px 85px 97px 0;
+    }
+
+    @include medium {
+      margin: 296px auto 60px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    align-self: center;
+  }
+}

@@ -27,15 +27,41 @@
   }
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 1366px;
+  padding: 0 98px;
+  margin: 0 auto;
+
+  @include extra-large {
+    padding: 0 45px;
+  }
+
+  @include medium {
+    padding: 0 15px;
+  }
+}
+
 .title-medium {
+  font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 32px;
   line-height: 1.25;
   color: $blue-zodiac-color;
-  font-family: Raleway, "Helvetica Neue", Helvetica, sans-serif;
+
+  @include medium {
+    font-size: 28px;
+    text-align: center;
+  }
 }
 
 .paragraph-medium {
   font-size: 18px;
   line-height: 1.45;
   color: $blue-zodiac-color;
+
+  @include medium {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+  }
 }
