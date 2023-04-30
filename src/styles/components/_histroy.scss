@@ -1,0 +1,42 @@
+.history {
+  padding: 120px 0;
+  background-image: url("Images/history-image.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+  @include extra-large {
+    padding: 100px 0;
+  }
+
+  @include medium {
+    padding: 60px 0;
+  }
+
+  &__wrapper {
+    width: 100%;
+    max-width: 1366px;
+    padding: 0 303px;
+    margin: 0 auto;
+
+    @include extra-large {
+      padding: 0 58px;
+    }
+
+    @include medium {
+      padding: 0 39px;
+    }
+  }
+
+  &__philosophy {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__button {
+    max-width: 163px;
+    padding: 0 26px;
+    margin: 0 auto;
+  }
+
+}
