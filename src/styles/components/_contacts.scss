@@ -1,0 +1,93 @@
+.contacts {
+  overflow: hidden;
+
+  @include extra-large {
+    position: relative;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__text-content {
+    width: 100%;
+    max-width: 670px;
+    padding: 100px 0 100px 100px;
+    margin-right: -170px;
+    background-color: $pampas-color;
+
+    @include extra-large {
+      max-width: 100%;
+      padding: 60px 0 60px 60px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__map {
+    width: 670px;
+    height: 422px;
+    background-color: $cultured-color;
+
+    @include extra-large {
+      position: absolute;
+      top: 50%;
+      left: calc(50% + 15px);
+      width: calc(50% - 15px);
+      height: 374px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.text-content {
+  max-width: 256px;
+  margin-bottom: 35px;
+
+  &__item {
+    margin-bottom: 35px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.45;
+    color: $blue-zodiac-color;
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 1.45;
+    color: $blue-zodiac-color;
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.social {
+  display: flex;
+  column-gap: 30px;
+
+  &__link {
+    transition: opacity 0.6s;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}
+

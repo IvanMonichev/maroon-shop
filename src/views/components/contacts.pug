@@ -1,0 +1,28 @@
+section.main__item.contacts
+  div.contacts__wrapper.wrapper
+    div.contacts__text-content
+      h2.contacts__title.title-medium Контакты
+      ul.text-content
+        li.text-content__item
+          h3.text-content__title Адрес
+          p.text-content__description Санкт-Петербург, ул.&nbsp;Большая Конюшенная, 19
+        li.text-content__item
+          h3.text-content__title Телефон
+          p.text-content__description #[a(href='tel:+79238889060' arial-label='+79238889060') +7 (923) 888-90-60]
+        li.text-content__item
+          h3.text-content__title E-mail
+          p.text-content__description #[a(href='mailto:info@maroon.ru' arial-label='info@maroon.ru') info@maroon.ru]
+      ul.contacts__social.social
+        li.social__item
+          a.social__link(href='#' aria-label='Facebook')
+            svg(height=18 width=11)
+              use(xlink:href='#facebook-icon')
+        li.social__item
+          a.social__link(href='#' aria-label='Instagram')
+            svg(height=20 width=20)
+              use(xlink:href='#instagram-icon')
+        li.social__item
+          a.social__link(href='#' aria-label='Twitter')
+            svg(height=17 width=20)
+              use(xlink:href='#twitter-icon')
+    div.contacts__map#map(data-center="59.93791367332671,30.32282782142634" data-zoom="17")

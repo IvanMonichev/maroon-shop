@@ -1,5 +1,6 @@
 import $ from "jquery";
 import "./vendor/swiper-config.js";
+import "./vendor/map.js";
 
 $( document ).ready( () => {
 
