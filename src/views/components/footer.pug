@@ -1,0 +1,32 @@
+footer.footer
+  div.footer__content
+    a.logo(href='#' aria-label='Логотип Maroon')
+      svg.logo__image(width=131 height=21)
+        use(xlink:href="#logo-icon")
+    ul.footer__navigation
+      li.footer__navigation-item
+        a.footer__navigation-link(href='catalog.html') Каталог
+      li.footer__navigation-item
+        a.footer__navigation-link(href='catalog.html') О нас
+      li.footer__navigation-item
+        a.footer__navigation-link(href='catalog.html') Магазины
+      li.footer__navigation-item
+        a.footer__navigation-link(href='catalog.html') Контакты
+    ul.footer__social.social
+      li.social__item
+        a.social__link(href='#' aria-label='Facebook')
+          svg(height=18 width=11)
+            use(xlink:href='#facebook-icon')
+        li.social__item
+          a.social__link(href='#' aria-label='Instagram')
+            svg(height=20 width=20)
+              use(xlink:href='#instagram-icon')
+        li.social__item
+          a.social__link(href='#' aria-label='Twitter')
+            svg(height=17 width=20)
+              use(xlink:href='#twitter-icon')
+  div.footer__copyright
+    div.footer__copyright-content
+      p.footer__copyright-text Maroon © #[span.footer__copyright-year] Все права защищены
+      p.footer__copyright-developer Разработка — #[a(href='https://github.com/IvanMonichev' target='_blank') Ivan Monichev]
+    a.footer__copyright-link(href='#') Политика конфиденциальности

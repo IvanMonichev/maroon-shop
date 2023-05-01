@@ -23,6 +23,9 @@ $( document ).ready( () => {
       $( ".header" ).removeClass( "header--colored" );
     }
   } );
+
+  // Get current year for footer
+  $( ".footer__copyright-year" ).text( ( new Date ).getFullYear() );
 } );
 
 console.log( `Ivan Monichev © ${new Date().getFullYear()} — https://github.com/IvanMonichev` );
