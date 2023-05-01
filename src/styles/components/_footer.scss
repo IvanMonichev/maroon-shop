@@ -1,15 +1,21 @@
 .footer {
   background-color: $pampas-color;
 
+  &__content-wrapper {
+    border-bottom: 1px solid #D1D1D1;
+  }
+
   &__content {
     display: flex;
     align-items: center;
     padding: 60px 98px;
-    border-bottom: 1px solid #D1D1D1;
+    margin: 0 auto;
+    max-width: 1366px;
 
     @include extra-large {
       padding: 60px 45px;
     }
+
 
     @include medium {
       flex-direction: column;
@@ -31,17 +37,16 @@
     @include medium {
       flex-wrap: wrap;
       column-gap: 0;
-      margin: 0;
       align-items: center;
       justify-content: flex-start;
+      margin: 0;
     }
   }
 
   &__navigation-item {
     @include medium {
-
-      margin: 0 10px 15px 0;
       width: 90px;
+      margin: 0 10px 15px 0;
     }
   }
 
@@ -65,14 +70,17 @@
     align-items: flex-start;
     justify-content: space-between;
     padding: 22px 98px;
+    max-width: 1366px;
+    margin: 0 auto;
 
     @include extra-large {
       padding: 22px 45px;
     }
 
     @include medium {
-      padding: 27px 15px;
       flex-direction: column;
+      padding: 27px 15px;
+      gap: 22px;
     }
   }
 
